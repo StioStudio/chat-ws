@@ -2,8 +2,6 @@ import { WebSocketServer } from 'ws';
 
 const wss = new WebSocketServer({ port: 5002, path: "/aioewa/chat-ws" });
 
-console.log(wss)
-
 wss.on('connection', function connection(ws, req) {
     ws.on('error', console.error);
     users.push({

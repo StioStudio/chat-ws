@@ -1,6 +1,6 @@
 import { WebSocketServer } from 'ws';
 
-const wss = new WebSocketServer({ port: 5000, path: "/ws" });
+const wss = new WebSocketServer({ port: 5002, path: "/ws" });
 
 wss.on('connection', function connection(ws, req) {
     ws.on('error', console.error);
